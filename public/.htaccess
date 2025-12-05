@@ -1,0 +1,7 @@
+# Autorise l'accès normal au site
+Require all granted
+
+# Bloque l'accès direct aux fichiers sensibles
+<FilesMatch "\.(stl|obj|gcode|zip)$">
+    Require all denied
+</FilesMatch>
